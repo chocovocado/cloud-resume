@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title> Afifah's Resume </title>
+        <meta name="description" content="Computer Engineering Graduate from Universitas Andalas working across embedded systems, network automation, machine learning, and media production.">
+        <link rel="icon" href="data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Figtree:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrap">
+
+            <aside>
+                <h1>Afifah Dwi Rahmadani</h1>
+                <p class="role">Bachelor of Computer Engineering, Universitas Andalas · IoT & Embedded Systems · Network · Machine Learning · Media Production</p>
+                <ul class="contact">
+                    <li><span>Email</span><a href="mailto:afifahdrahmadani@gmail.com">afifahdrahmadani@gmail.com</a></li>
+                    <li><span>Whatsapp</span><a href="https://wa.me/6281293269355">+62 812-9326-9355</a></li>
+                    <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/afifahdrahmadani/">afifahdrahmadani</a></li>
+                    <li><span>Instagram</span><a href="https://www.instagram.com/afifahrdnn/">@afifahrdnn</a></li>
+                </ul>
+
+                <nav aria-label="Sections">
+                    <a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a>
+                </nav>
+                <div class="counter" id="counter" role="status">
+                    <span class="led" aria-hidden="true"></span>
+                    <span> Visitor <b id="count">-</b></span>
+                </div>
+            </aside>
+
+            <main>
+                <p class="lead">I like finding out how things work, then building them. My projects range from automated MikroTik network monitoring system, camera helmet running on a Raspberry Pi Zero, infant sleep position monitoring system that won a Bronze Medal at iReX 2026 in Malaysia.</p>
+
+                <section id="education" aria-labelledby="h-edu">
+                    <h2 id="h-edu">Education</h2>
+                    <div class="item">
+                        <div class="when">Sep 2026</div>
+                        <div><h3>Universitas Andalas</h3><div class="org">Padang, Indonesia</div>
+                        Bachelor of Computer Engineering, GPA 3.39/4.00</div>
+                    </div>
+                </section>
+
+                <section id="experience" aria-labelledby="h-exp">
+                    <h2 id="h-exp">Experience</h2>
+
+                    <div class="item">
+                        <div class="when">Jun 2025 - Jun 2026</div>
+                        <div><h3>Treasurer</h3>
+                        <div class="org">Laboratory of Digital Systems and Computer Architecture, Universitas Andalas</div>
+                        <ul>
+                            <li>Recorded every incoming and outgoing transaction accurately and transparently.</li>
+                            <li>Managed funding of over Rp3,000,000 across three divisions, the lab's operational budget and daily operations.</li>
+                        </ul></div>
+                    </div> 
+
+                    <div class="item">
+                        <div class="when">Jun 2026</div>
+                        <div><h3>International Exhibition Participant <span class="award">Bronze Medal</span></h3>
+                        <div class="org">MSU iReX 2026, Management and Science University, Shah Alam, Malayasia</div>
+                        
+                        <ul>
+                            <li>Developed BabyGuard, an infant sleep monitoring system that combines YOLOv8n (object localization) and MobileNetV2 (sleeping position classifier) to help prevent SIDS.</li>
+                            <li>Pitched the system to an international judging panel and won a Bronze Medal.</li>
+                        </ul></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="when">Jan 2025 - Feb 2026</div>
+                        <div><h3>Secretary - Creative Media Division</h3>
+                        <div class="org">Himpunan Mahasiswa Teknik Komputer (HIMATEKOM)</div>
+
+                        <ul>
+                            <li>Built 5+ design templates that gave a 90%+ on-time completion rate for design requests across 8 divisions.</li>
+                            <li>Produced the organization profile vide (6,000+ Instagram views) and partnership videos that brought in over Rp2,000,000.</li>
+                            <li>Photographed and archived 40+ events and work programs, and ran the division's administration.</li>
+                        </ul></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="when">Jan - Feb 2025</div>
+                        <div><h3>Intern - Computer Network and Embedded Systems</h3>
+                        <div class="org">CV. Putra Anugrah Mandiri, Padang</div>
+                        <ul>
+                            <li>Built a real-time, request-based MikroTik monitoring system with Telegram integration. It shipped with 8+ features and is used in full-scale company operations.</li>
+                            <li>Built wearable helmet surveillance camera on a single board computer that records for 3+ hours and has a custom low-power standby mode.</li>
+                        </ul></div>
+                    </div>
+
+                    <div class="item">
+                        <div class="when">Jun 2024 - Apr 2025</div>
+                        <div><h3>Staff - Multimedia Division</h3>
+                        <div class="org">Laboratory of Digital Systems and Computer Architecture, Universitas Andalas</div>
+                        <ul>
+                            <li>Documented lab events and work programs on camera.</li>
+                            <li>Edited the lab profile video, which passed 200 views on YouTube.</li>
+                        </ul></div>
+                    </div>
+                </section>
+
+                <section id="projects" aria-labelledby="h-proj">
+                    <h2 id="h-proj">Projects</h2>
+
+                    <article class="proj">
+                        <header><h3>BabyGuard: Infant Sleep Posture Detection</h3><span class="cat">Artificial Intelligence · 2026</span></header>
+                        <p>An edge AI baby monitor that tracks sleeping posture with an infrared camera and alerts caregivers within about 2.5 seconds after a dangerous position detected. It was presented at MSU iReX 2026, where it won a Bronze Medal.</p>
+                        <dl><dt>Role</dt><dd>Full-stack engineer</dd>
+                        <dt>Built with</dt><dd class="chips"><span>Raspberry Pi 4B</span><span>OV5647 IR-LED</span><span>YOLOv8n</span><span>MobileNetV2</span><span>Roboflow</span><span>TensorFlow Lite</span><span>Python</span><span>Blynk</span><span>Ngrok</span></dd></dl>
+                    </article>
+
+                    <article class="proj">
+                        <header><h3>MikroTik Monitoring with Telegram Bot</h3><span class="cat">Network · 2025</span></header>
+                        <p>MikroTik scripts connected to a Telegram bot so the network admin can check interface status, active clients and daily internet usage from Telegram. It sends instant alerts when an interface goes down and resets daily traffic counters automatically.</p>
+                        <dl><dt>Role</dt><dd>Full-stack engineer, CV. Putra Anugrah Mandiri</dd>
+                        <dt>Built with</dt><dd class="chips"><span>MikroTik RouterBOARD</span><span>RouterOS scripting</span><span>Telegram Bot API</span></dd></dl>
+                    </article>
+
+                    <article class="proj">
+                        <header><h3>Helmet Surveillance Camera</h3><span class="cat">Embedded Systems · 2025</span></header>
+                        <p>A wearable camera helmet that records 1280x720 .mp4 video for about 3 hours on a 20000 mAh powerbank. Push buttons control power and recording, and buzzer patterns report status on a device with no screen.</p>
+                        <dl><dt>Role</dt><dd>Full-stack engineer</dd>
+                        <dt>Built with</dt><dd class="chips"><span>Raspberry Pi Zero</span><span>Pi Zero Camera</span><span>Python</span></dd></dl>
+                    </article>
+
+                    <article class="proj">
+                        <header><h3>HIMATEKOM Graphic Design</h3><span class="cat">Creative · 2025</span></header>
+                        <p>Posts, Instagram story frames, banners, certificates, and presentation decks for a student organization, plus reusable templates in dark, light and monochrome that made daily content production faster.</p>
+                        <dl><dt>Role</dt><dd>Graphic designer (team of 4)</dd>
+                        <dt>Built with</dt><dd class="chips"><span>Figma</span><span>Canva</span></dd></dl>
+                    </article>
+
+                    <article class="proj">
+                        <header><h3>Video Production</h3><span class="cat">Creative · 2025-2026</span></header>
+                        <p>Shooting and editing for organization profile, partnership content, TikTok-style clips, MSU iReX submission videos and village documentary for KKN Nagari Kubang 2025. I keep edits clean and captions easy to read.</p>
+                        <dl><dt>Role</dt><dd>Videographer, video editor</dd>
+                        <dt>Built with</dt><dd class="chips"><span>CapCut</span><span>iPhone 15</span></dd></dl>
+                    </article>
+
+                    <article class="proj">
+                        <header><h3>DigiCare: Mood and Stress Tracker</h3><span class="cat">UI/UX · 2025</span></header>
+                        <p>Mobile app design that shows a daily mood summary, a stress score and recommended articles, with quick links to a stress test and doctor search. I took it from wireframes to a high-fidelity prototype.</p>
+                        <dl><dt>Role</dt><dd>Wireframer, concepting, designer (team of 3)</dd>
+                        <dt>Built with</dt><dd class="chips"><span>Figma</span></dd></dl>
+                    </article>
+                </section>
+
+                <section id="skills" aria-labelledby="h-skills">
+                    <h2 id="h-skills">Skills</h2>
+                    <dl class="skills">
+                        <dt>Hardware</dt><dd>Microcontrollers, Single Board Computers, MikroTik, Sensors and Components</dd>
+                        <dt>Programming</dt><dd>Python, C++, Flutter</dd>
+                        <dt>Design</dt><dd>Figma, Canva, Clip Studio Paint</dd>
+                        <dt>Certification</dt><dd>MikroTik Certified Network Associate (MTCNA), 2025-2028</dd>
+                        <dt>Languages</dt><dd>Bahasa Indonesia (native), English (TOEFL prediction score 597)</dd>
+                        <dt>Working style</dt><dd>Quick learner, detail-oriented, collaborative, good time management</dd>
+                    </dl>
+                </section>
+
+                <footer>© 2026 Afifah Dwi Rahmadani · Built with S3, CloudFront, Lambda and Terraform</footer>
+            </main>
+        </div>
+
+        <script src="counter.js"></script>
+    </body>
+</html>
