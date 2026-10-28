@@ -34,18 +34,6 @@ jobs:
           dist_id: ${{ steps.out.outputs.dist_id }}
       steps:
         - uses: actions/checkout@v4
-        - name: Debug OIDC subject
-          run: |
-            python3 - <<'EOF'
-            import os, json, base64, urllib.request
-            url = os.environ["ACTIONS_ID_TOKEN_REQUEST_URL"] + "&audience=sts.amazonaws.com"
-            req = urllib.request.Request(url, headers={"Authorization": "bearer " + os.environ["ACTIONS_ID_TOKEN_REQUEST_TOKEN"]})
-            token = json.load(urllib.request.urlopen(req))["value"]
-            payload = token.split(".")[1]
-            payload += "=" * (-len(payload) % 4)
-            claims = json.loads(base64.urlsafe_b64decode(payload))
-            print({k: claims.get(k) for k in ("sub", "aud", "repository")})
-            EOF
         - uses: aws-actions/configure-aws-credentials@v4
           with:
             role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
@@ -71,6 +59,6 @@ jobs:
             aws-region: us-east-1
         - run: aws s3 sync frontend/ s3://${{ needs.terraform.outputs.bucket }} --delete
         - run : >
-            aws cloudfornt create-invalidation
+            aws cloudfront create-invalidation
             --distribution-id ${{ needs.terraform.outputs.dist_id }}
             --paths "/*"
